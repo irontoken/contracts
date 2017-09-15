@@ -37,7 +37,7 @@ For more information, please refer to <http://unlicense.org>
 
 pragma solidity ^0.4.11;
 
-contract IronToken {
+contract StarkToken {
     /* Public variables of the token */
     string public name;
     string public symbol;
@@ -50,7 +50,7 @@ contract IronToken {
     event Transfer(address indexed from, address indexed to, uint256 value);
 
     /* Initializes contract with initial supply tokens to the creator of the contract */
-    function IronToken(uint256 _supply, string _name, string _symbol, uint8 _decimals) {
+    function StarkToken(uint256 _supply, string _name, string _symbol, uint8 _decimals) {
         /* if supply not given then generate 1 million of the smallest unit of the token */
         if (_supply == 0) _supply = 1000000;
 
